@@ -1,0 +1,20 @@
+RewriteEngine On
+
+## RewriteRule / /pages/home.php [L,QSA,NC]
+## RewriteRule ^(.*)$ /pages/$1.php [L,QSA,NC]
+## RewriteRule ^(.*)(/.*)(/.*)$ /pages/$1.php?id=$2&tab=$3 [L,QSA,NC]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)/+$ $1 [R=301,L]
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^assets/(.*)$ assets/$1 [L]
+RewriteRule ^uploads/(.*)$ uploads/$1 [L]
+RewriteRule ^(.*)/(.*)/(.*)$ index.php?p=$1&id=$2&tab=$3 [L]
+RewriteRule ^(.*)/(.*)$ index.php?p=$1&id=$2 [L]
+RewriteRule ^(.*)$ index.php?p=$1 [L]
+
+
+</IfModule>
+
