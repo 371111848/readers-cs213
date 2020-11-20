@@ -1,4 +1,4 @@
-# Reader
+# Readers
 
 The Group Reading Management Web-App
 
