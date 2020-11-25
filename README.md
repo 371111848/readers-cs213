@@ -30,4 +30,6 @@ After successfully uploading your data, you can enjoy using the app with 4 main 
 * Books - Where you can check the list of books information
 * Categories - Check the categories and its information
 
+You can check out the [guide](https://github.com/371111848/readers-cs213/blob/main/guide.pdf) to have a glance at the software (screenshots included)
+
 ***Note:** You can always update the data by re-uploading the data using ***Upload Data*** page.*
